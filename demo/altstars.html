@@ -24,7 +24,7 @@ var config = {
   projection: "orthographic",
   //interactive: false,
   background: { fill: "#000000", stroke: "#000000", opacity: 1, width: 4 },
-  datapath: "https://ofrohn.github.io/data/",
+  datapath: "https://technocracyarabic.github.io/starmap/data/",
   stars: { show: false },
   dsos: { show: false },
   mw: { style: { fill: "#ffffff", opacity: "0.05" } },
@@ -50,7 +50,7 @@ var limitMagnitude = 6,
 
 Celestial.add({
   type:"json",
-  file:"https://ofrohn.github.io/data/stars." + limitMagnitude + ".json",
+  file:"https://technocracyarabic.github.io/starmap/data/stars." + limitMagnitude + ".json",
 
   callback: function(error, json) {
 

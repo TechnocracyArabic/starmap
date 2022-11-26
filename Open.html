@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .fit {
+            /* set relative picture size */
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .center {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <html class='v3' dir='ltr' lang='ar'>
+    <html <script type="text/javascript" src="https://d3js.org/d3.v3.min.js">
+    </script>
+    <script type="text/javascript" src="https://d3js.org/d3.geo.projection.v0.min.js"></script>
+    <script type="text/javascript" src="/celestial.min.js"></script>
+    <link rel="stylesheet" href="/celestial.css">
+
+    <div style="overflow:hidden;">
+        <div id="celestial-map"></div>
+    </div>
+    <div id="celestial-form"></div>
+
+    <script type="text/javascript">
+        /* D3-Celestial sky map
+           Copyright 2015 Olaf Frohn https://github.com/ofrohn, see LICENSE
+        */
+        //Default settings
+        var cfg = Celestial.settings().set({
+            width: 0,
+            advanced: false,
+            interactive: false,
+            disableAnimations: true,
+            form: true,
+            location: true,
+            adaptable: true,
+            transform: "equatorial",
+            follow: "zenith",
+            geopos: [24.774265, 46.738586],
+            formFields: {
+                "location": true,
+                "general": true,
+                "stars": true,
+                "dsos": false,
+                "constellations": true,
+                "lines": false,
+                "other": false,
+                "download": true
+            },
+            projection: "airy",
+            datapath: "/data/",
+            lines: {
+                graticule: {
+                    show: false
+                },
+                equatorial: {
+                    show: false
+                },
+                ecliptic: {
+                    show: false
+                },
+                galactic: {
+                    show: false
+                },
+                supergalactic: {
+                    show: false
+                }
+            },
+
+            planets: {
+                show: true,
+                which: ["mer", "ven", "ter", "lun", "mar", "jup", "sat"],
+
+                symbolType: "disk",
+                names: true,
+                nameStyle: {
+                    fill: "#00ccff",
+                    font: `14px 'Markazi Text', serif`,
+                    align: "center",
+                    baseline: "top"
+                },
+                namesType: "ar"
+            },
+
+            dsos: {
+                show: false,
+                names: false
+            },
+
+            constellations: {
+                names: true,
+                namesType: "ar",
+                nameStyle: {
+                    fill: "#ffffff",
+                    align: "center",
+                    baseline: "middle",
+                    font: [`14px 'Markazi Text', serif`, `8px 'Markazi Text', serif`, `0px 'Markazi Text', serif`]
+                },
+                lines: true,
+                lineStyle: {
+                    stroke: "#cccccc",
+                    width: 1,
+                    opacity: 0.4
+                }
+            },
+
+            mw: {
+                show: true,
+                style: {
+                    fill: "#ffffff",
+                    opacity: 0.02
+                }
+            },
+
+            background: {
+                fill: "#0b1a26",
+                stroke: "#ffffff",
+                opacity: 1,
+                width: 2
+            },
+
+            stars: {
+                colors: true,
+                size: 4,
+                limit: 6,
+                exponent: -0.28,
+                designation: false,
+
+                propername: true,
+                propernameType: "ar",
+                propernameStyle: {
+                    fill: "#ddddbb",
+                    font: `8px 'Markazi Text', serif`,
+                    align: "end",
+                    baseline: "top"
+                },
+                propernameLimit: 2.0
+            }
+
+        });
+        //Show map
+        Celestial.display(cfg);
+    </script>
+
+</body>
+
+</html>

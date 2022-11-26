@@ -17,7 +17,7 @@ function form(cfg) {
   //Map parameters    
   var col = frm.append("div").attr("class", "col").attr("id", "general");
   
-  col.append("label").attr("title", "Map width in pixel, 0 indicates full width").attr("for", "width").html("Width ");
+  col.append("label").attr("title", "Map width in pixel, 0 indicates full width").attr("for", "width").html("العرض ");
   col.append("input").attr("type", "number").attr("maxlength", "4").attr("max", "20000").attr("min", "0").attr("title", "Map width").attr("id", "width").attr("value", config.width).on("change", resize);
   col.append("span").html("px");
 

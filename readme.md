@@ -7,16 +7,16 @@ Features display of stars and deep sky objects (DSOs) with a selectable magnitud
 Since it uses D3.js and HTML5 canvas, it needs a modern browser with canvas support, so any recent flavor of Chrome/Firefox/Safari/Opera or IE 9 and above should suffice. Check out the demo at <a href="http://armchairastronautics.blogspot.com/p/skymap.html">armchairastronautics.blogspot.com</a> or clone/download it for local usage, which works with Chrome if it is started with command line parameter  `--allow-file-access-from-files` to load local json files. Or use a local web server environment, quite easy to do with node.js.
 
 __Demos__:  
-[Simple map](https://ofrohn.github.io/celestial-demo/map.html) with editable configuration  
-[Interactive form](https://ofrohn.github.io/celestial-demo/viewer.html) map viewer with all config options  
-[Wall map](https://ofrohn.github.io/celestial-demo/wallmap.html) for printing  
-[Setting time/location](https://ofrohn.github.io/celestial-demo/location.html) and see the current sky  
-[Animated planets](https://ofrohn.github.io/celestial-demo/planets-animation.html) moving about the ecliptic  
-[Starry sky](https://ofrohn.github.io/celestial-demo/sky.html) just the stars  
-[Alternative Stars](https://ofrohn.github.io/celestial-demo/altstars.html) different way to display stars  
-[Summer triangle](https://ofrohn.github.io/celestial-demo/triangle.html) adding data  
-[Supernova remnants](https://ofrohn.github.io/celestial-demo/snr.html) adding point data  
-[Traditional Chinese constellation](https://ofrohn.github.io/celestial-demo/chinese.html) a different culture altogether    
+[Simple map](https://technocracyarabic.github.io/starmap/celestial-demo/map.html) with editable configuration  
+[Interactive form](https://technocracyarabic.github.io/starmap/celestial-demo/viewer.html) map viewer with all config options  
+[Wall map](https://technocracyarabic.github.io/starmap/celestial-demo/wallmap.html) for printing  
+[Setting time/location](https://technocracyarabic.github.io/starmap/celestial-demo/location.html) and see the current sky  
+[Animated planets](https://technocracyarabic.github.io/starmap/celestial-demo/planets-animation.html) moving about the ecliptic  
+[Starry sky](https://technocracyarabic.github.io/starmap/celestial-demo/sky.html) just the stars  
+[Alternative Stars](https://technocracyarabic.github.io/starmap/celestial-demo/altstars.html) different way to display stars  
+[Summer triangle](https://technocracyarabic.github.io/starmap/celestial-demo/triangle.html) adding data  
+[Supernova remnants](https://technocracyarabic.github.io/starmap/celestial-demo/snr.html) adding point data  
+[Traditional Chinese constellation](https://technocracyarabic.github.io/starmap/celestial-demo/chinese.html) a different culture altogether    
 \([Source files on github](./demo/)\)  
 
 __Some more examples__:  
