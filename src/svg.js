@@ -711,7 +711,7 @@ function exportSVG(fname) {
   q.await(function(error) {
     if (error) throw error;
     var svg = d3.select("#d3-celestial-svg svg")
-      .attr("title", "D3-Celestial")
+      .attr("title", "Astrophile")
       .attr("version", 1.1)
       .attr("encoding", "UTF-8")
       .attr("xmlns", "http://www.w3.org/2000/svg")
@@ -731,7 +731,7 @@ function exportSVG(fname) {
       var blob = new Blob([svg.node().outerHTML], {type:"image/svg+xml;charset=utf-8"});
     
       var a = d3.select("body").append("a").node(); 
-      a.download = fname || "d3-celestial.svg";
+      a.download = fname || "Astrophile.svg";
       a.rel = "noopener";
       a.href = URL.createObjectURL(blob);
       a.click();
