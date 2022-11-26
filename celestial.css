@@ -10,7 +10,7 @@
 #d3-celestial-footer a { text-decoration:none; color:#99f; }
 
 /* Form */
-#celestial-form { font:12pt/1 'Markazi Text', serif;  display: inline-grid; position: relative; top: 50px; white-space: pre-line; background: #eee; }
+#celestial-form { font:12pt/1 'Markazi Text', serif;  display: inline-grid; position: relative; bottom: 50px; white-space: pre-line; background: #eee; }
 #error { position:absolute; min-width:100px; height:auto; padding: 2px 4px; color:#f00; background:#fff; border:2px solid #f00; border-radius:3px; font-weight:normal; display:block; top:-9999px; left:-9999px; opacity:0; transition:opacity 1s linear; }
 #celestial-form .col { border-top: 1px dotted #000; padding: 4px 6px; margin:0 0 4px; clear:both; white-space: pre-line; }
 /* What parts to show */
